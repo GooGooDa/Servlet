@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>webPrj</display-name>
+<!--   <servlet>
+  <servlet-name>nana</servlet-name>서블릿 객체의이름
+  <servlet-class>com.newlecture.Nana</servlet-class>메모리에 올림
+	<load-on-startup>1</load-on-startup>tomcat이 시작될때 바로 로드해라
+  </servlet>Servlet컨테이너에 담아뒀다가 url로 요청이오면 컨테이너속 서블릿객체를 찾는다.
+ 한번생성되면 컨테이너에 담긴다. 일정시간뒤에서 사용하지 않으면 Destroy 삭제ㅁ  
+  <servlet-mapping>
+  <servlet-name>nana</servlet-name>
+  <url-pattern>/hello.txt</url-pattern>
+  </servlet-mapping> -->
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+</web-app>
