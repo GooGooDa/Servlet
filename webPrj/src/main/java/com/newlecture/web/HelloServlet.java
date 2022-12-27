@@ -19,6 +19,7 @@ protected void service(HttpServletRequest request, HttpServletResponse response)
 	//	response.getOutputStream();  문자출력
 	//문자열 출력
 	PrintWriter out = response.getWriter();
+	response.setCharacterEncoding("UTF-8");
 	response.setContentType("text/html; charset=UTF-8");
 	String c = request.getParameter("c");
 	//모든입력은 문자열 int로 쓰길원하면 변경해줘야함
