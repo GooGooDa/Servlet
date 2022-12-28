@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="shortcut icon" href="#">
 <title>Insert title here</title>
 </head>
 <body>
@@ -123,7 +124,7 @@ if(isNaN(x))
 	alert(ar[i]);
 	*/
 
-	var ar = [1,2,3,4,5];
+/* 	var ar = [1,2,3,4,5]; */
 	
 	/* for(i in ar)
 	  alert(ar[i]); */
@@ -136,12 +137,103 @@ if(isNaN(x))
 /* 	for(v of ar)
 	  alert(ar[v]); */
 	//값을 뽑아줌 for-of
-	var record = {kor:30,eng:40,math:50};
+	/* var record = {kor:30,eng:40,math:50};
 
 	for(var k in record)
   		alert(record[k]);
+	
+ */
+/*  var add = new Function("x,y","return x+y;");
+ console.log(add(3,4)) */
+ 
+/*  var add = function(x,y){
+ 	return x+y;
+	 } */
+/*  	function add(x,y){
+ 		return x+y;
+ 	}
+ 	console.log(add(3,4,5,6)); */
+/*  function add(){
+ 		return arguments[0] + arguments[1];
+ 	}
+ 	
+ 	console.log(add(4,5)); */
+ 	
+ 	/* alert(a);
+ 	a = 1; */
+ 	
+ 	//전역객체 윈도우가 선언된것을 알수있다.
+/*  	a = 1;
+ 	alert(window.a); */
+ 	
+  	/* var f1 = function(){
+ 		a = 1;
+ 		console.log(window.a); 
+ 		// a가 전역객체에 들어감
+ 		// a가 stack에들어감
+ 		var a;
+ 	}
+ 	f1();  */
+	/*  	  {
+ 		var a = 1;
+ 	}  
+ 	alert(a);
+ 	 */
+ 	/* function f1(){
+ 		 var a = 10;
+ 		var f2 = function() {
+ 	 		var  a = 20;
+ 	 		}
+ 		 f2();
+ 		console.log(a);
+ 	 }
+ 	 f1(); */
+/*  	function f1(){
+ 		 var a = 10;
+ 		var f2 = function() {
+ 	 		 a++;
+ 	 		}
+ 		 f2();
+ 		 
+ 		 f3 = f2;
+ 		console.log(a);
+ 	 }
+ 	 
+ 	 f1();
+ 	 f1(); */
 
-	</script> 
+/*  	 var funcs = [] */
+ 			 
+ 	/*  funcs[0] = function(){
+ 	 console.log(0);
+ 	 };
+ 	funcs[1] = function(){
+	 console.log(1)
+	 };
+	 funcs[2] = function(){
+ 	 console.log(2);
+	 };
+	  */
+/* 	 for(var i=0;i<3;i++)
+		 funcs[i] = function(){
+			 console.log(i);
+		 };
+		  */
+	/* 	 funcs[0]();
+		 funcs[1]();
+		 funcs[2]();
+		 //직접뽑아보면 3,3,3 */
+		 
+		/*  
+		 for(var a=0;a<3;a++)
+		funcs[a]();
+		 //for문 돌리면 1,2,3?
+		//호출되는 시점에 for문의 i로 대치됐음 */
+		 
+	var ar = [];
+		 ar
+		 
+ </script> 
 
 		
 	
