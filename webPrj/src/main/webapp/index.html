@@ -230,9 +230,65 @@ if(isNaN(x))
 		 //for문 돌리면 1,2,3?
 		//호출되는 시점에 for문의 i로 대치됐음 */
 		 
-	var ar = [];
-		 ar
-		 
+	// var ar = [];
+	// 	 ar
+//  function Exam(){
+//  this.kor = 30;
+//  this.eng = 20;
+//  this.math = 40;
+//  }
+//   this.total = function(){
+//  return this.kor + this.eng + this.math;
+//     }
+// }
+
+// var examProtoType = {
+// 	background : 'green',
+// 	borderWidth : 100
+// };
+
+// Exam.protoType = {
+// 	total : function(){
+// 		return this.kor +this.eng + this.math; 
+// 	},
+// 	avg : function(){
+// 		return this.total()/3;
+// }
+// }
+// var examPRotoType = {
+// 	total : function(){
+// 		return this.kor + this.eng + this.math;
+// 	}
+
+// Exam.prototype.total = examProtoType;
+// 	return this.kor + this.eng + this.math;
+// Exam.prototype.total = function(){
+// 	return this.kor + this.eng + this.math;
+// }
+
+
+//var exam = new Exam();
+// console.log(exam.total());
+// var exam1 = new Exam();
+// console.log(exam1.total());
+
+//var isEquals = exam.total === exam1.total;
+//console.log(isEquals);
+// console.log(exam.background);
+// console.log(exam1.background);
+
+var ar = [];
+
+Array.prototype.total = function(){
+	return 40;
+}
+
+console.log(ar.total());
+
+var ar1 = [];
+console.log(ar1.total());
+
+//프로토타입은 생성자가 될수있는것에만 붙는다 함수로 사용가능한곳
  </script> 
 
 		

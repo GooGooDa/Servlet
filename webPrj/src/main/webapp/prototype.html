@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="#">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<script>
+		//prototype 예제 ＣleanCode
+		function Exam() {
+			this.kor = 30;
+			this.eng = 20;
+			this.math = 40;
+		}
+
+
+		Exam.prototype = {
+			total: function () {
+				return this.kor + this.eng + this.math;
+			},
+			avg: function () {
+				return this.total() / 3;
+			}
+		}
+
+		var exam = new Exam();
+		console.log(exam.total());
+		var exam1 = new Exam();
+		console.log(exam1.total());
+
+	</script>
+
+
+
+	<section>
+		<h1>인삿말을 몇번 듣고 싶으세요?</h1>
+		<ul>
+			<li><a href="hello?c=5">5번</a></li>
+			<li><a href="hello?c=10">10번</a></li>
+			<li><a href="hello?c=100">100번</a></li>
+		</ul>
+		<form action="/hello">
+			<label>기타</label>
+			<input name="c" placeholder="원하는 횟수를 입력하세요">
+			<input type="submit" value="전송">
+		</form><!-- get방식 form전송법 -->
+		<!-- 사용자가 입력한 방식으로 쿼리스트링을 만듬 -->
+		<a href="hello3?c=100">HomePage</a>
+	</section>
+</body>
+
+</html>
