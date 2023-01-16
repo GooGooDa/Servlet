@@ -1,71 +1,9 @@
 window.addEventListener("load", function () {
-    window.onclick = function(){
-        
-    };
     
-    var canvas = document.querySelector(".game-canvas");
-    
-    canvas.onclick = function(){
-        boy2.move(1);
-    boy2.draw(ctx);
-    }//Event boubling
+    var gameCanvas = new Gamecanvas();
+    gameCanvas.run();
+    });
 
-    // var img = this.document.querySelector("img");
-    /** @type {CanvasRenderingContext2D} */
-    var ctx = canvas.getContext("2d");
-
-    function Boy(x,y) {
-        this.x = x || 100;
-        this.y = y || 100;
-        this.ix = 1;
-        this.iy = 2;
-
-        this.sw = 106;
-        this.sh = 148.25;
-        this.sx = this.sw * this.ix;
-        this.sy = this.sh * this.iy;
-
-    }
-
-
-    Boy.prototype = {
-        draw: function (ctx) {
-            var img = new Image();
-            img.src = "./img/boy.png";
-            img.onload = function () {
-                console.log(this)
-                ctx.drawImage(img,
-                    this.sx, this.sy, this.sw, this.sh,
-                    this.x , this.y,106,148.25);
-
-            }.bind(this);
-        },
-        move:function(dir){
-            switch(dir){
-             case 1://북쪽
-             this.y -=10;
-            break;
-            case 2://동쪽
-            this.x +=10;
-            break;
-            case 3: //남
-            this.y +=10;
-            break;
-            case 4: //서쪽
-            this.x -=10;
-            }
-        }
-    };
-    var boy1 = new Boy();
-    boy1.draw(ctx);
-
-    var boy2 = new Boy();
-    boy2.draw(ctx);
-    boy2.move(1);
-    boy2.draw(ctx);
-
-
-});
 
 // function Box(){
 
